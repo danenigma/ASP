@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  31 AUG 2017 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  31 AUG 2017 15:27
 entering extended mode
 **./hm1.tex
 (hm1.tex
@@ -140,7 +140,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-) (hm1.aux)
+) (hm1.aux
+
+LaTeX Warning: Label `fig:mouse' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:mouse' multiply defined.
+
+
+LaTeX Warning: Label `fig:mouse' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:mouse' multiply defined.
+
+)
 \openout1 = `hm1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -155,8 +168,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen121
@@ -327,15 +339,25 @@ Overfull \hbox (119.90007pt too wide) in paragraph at lines 167--168
 [][] 
  []
 
-[7 <./images/2f.jpg>] [8] (hm1.aux)
+[7 <./images/2f.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 173--177
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--177
+
+ []
+
+[8] (hm1.aux)
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  3323 strings out of 493323
  49715 string characters out of 3139060
- 119992 words of memory out of 3000000
+ 120048 words of memory out of 3000000
  6830 multiletter control sequences out of 15000+200000
  9855 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -350,7 +372,7 @@ amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on hm1.pdf (8 pages, 310670 bytes).
+Output written on hm1.pdf (8 pages, 311581 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
