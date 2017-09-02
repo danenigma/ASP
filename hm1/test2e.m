@@ -3,7 +3,7 @@ Number_of_states = 3;
 start_state = 1;
 P = [0.3 0.7 0;0.1 0.4 0.5;1 0 0];
 Y = zeros(N,Number_of_states);
-
+simMC(10,start_state,P)
 for i=1:N
     Y(i,:)=get_frac_dist(simMC(i,start_state,P),Number_of_states);
 end

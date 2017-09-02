@@ -8,6 +8,6 @@ hold on;
 scatter(x,pin(:,2),'o');
 scatter(x,pin(:,3),'x');
 hold off;
-legend('state1','state2','state3');
+legend('state0','state1','state2');
 xlabel('n');
 ylabel('\pin')

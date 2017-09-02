@@ -1,9 +1,36 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,11pt]{report}
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{amsmath}
-
+\usepackage{tikz}
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+\usetikzlibrary{automata,positioning}
 \graphicspath{ {images/} }
 \begin{document}
 \title{\color{red}CARNEGIE MELLON UNIVERSITY\\
@@ -13,7 +40,7 @@ HOMEWORK 1}
 \date{\today}
 \maketitle
 \newpage
-\section{prove with Venn diagrams}
+\section*{Q.1 prove with Venn diagrams}
 \subsection*{(a) $A \cap B^c = A-B$}
 \begin{figure}[h]
     \centering
@@ -32,6 +59,8 @@ HOMEWORK 1}
         \caption{$A-B$}
         \label{fig:mouse}
     \end{subfigure}
+    \caption{}
+
 \end{figure}
 this implies $A \cap B^c = A-B$ is true
 \subsection*{(b) $A \cup B^c = (A^c\cap B)^c$}
@@ -58,38 +87,96 @@ this implies $A \cap B^c = A-B$ is true
         \caption{$(A^c \cap B)^c$}
         \label{fig:mouse}
     \end{subfigure}
+    \caption{}
 \end{figure}
-this implies $A \cup B^c = (A^c\cap B)^c$ is true
+hence $A \cup B^c = (A^c\cap B)^c$ is true
 \subsection*{(c) $B-A \neq A-B$}
 \begin{figure}[h]
     \centering
-    \begin{subfigure}[b]{0.35\textwidth}
+    \begin{subfigure}[b]{0.25\textwidth}
         \includegraphics[width=\textwidth]{B-A}
         \caption{$B-A$}
     \end{subfigure}
-    \begin{subfigure}[b]{0.35\textwidth}
+    \begin{subfigure}[b]{0.25\textwidth}
         \includegraphics[width=\textwidth]{A-B}
         \caption{$ A-B$}
     \end{subfigure}
+    \caption{}
 \end{figure}
-this implies $B-A \neq A-B$ is true
+therefor $B-A \neq A-B$ is true
 \newpage
-\section{}
+\section*{Q.2}
+\begin{figure}[h]
+ \begin{tikzpicture}[font=\sffamily]
+        % Setup the style for the states
+        \tikzset{node style/.style={state, 
+                                    minimum width=1.5cm,
+                                    line width=1mm,
+                                   }}
+        % Draw the states
+        \node[node style] at (0, 0)     (bull)     {0};
+        \node[node style] at (5, 0)     (bear)     {1};
+        \node[node style] at (2.5, -3.196) (stagnant) {2};
+ 
+        % Connect the states with arrows
+        \draw[every loop,
+              auto=right,
+              line width=1mm,
+              >=latex]
+            (bull)     edge[bend left=20, auto=left] node {0.7} (bear)
+            (bear)     edge[bend left=20]            node {0.1} (bull)
+            (bear)     edge[bend left=20, auto=left] node {0.5} (stagnant)
+            (stagnant) edge[bend left=20, auto=left] node {1} (bull)
+            (bull) edge[loop left] node {0.3} (bull)
+	 (bear) edge[loop right] node {0.4} (bear);
+            
+    \end{tikzpicture}
+    \caption{MC}
+     \label{fig:MC1}
+\end{figure}
+
 \subsection*{(a) Irreduciblity and periodicity }
-The Markov Chain is irreducible because we can go from any of the states to the other states in finit number of steps
-It is also aperiodic[Justfy]
-\subsection*{(b) invariant distribution $\pi$ }
+\subsubsection*{Irreduciblity}
+	
+A markov chain is said to be Irreducible if
+\begin{equation}
+\forall i,j \in S, \exists m < \infty : P(X_{n+m} = j|X_n=i )>0
+\end{equation}•
+
+i.e regardless the present state we can reach any other state in finit time.\cite{irreducible}
+On the Markov Chain in figure \ref{fig:MC1} we can go from any of the  states  to the other states in a finit number of steps hence it is irreducible.
+\subsubsection*{Periodicity}
+for an irreducible Markov Chain the periodicity of state $i$ is defined by
+\begin{equation}
+d(i)= g.c.d\{n\geq 1 | P^n(i,i)>0\}
+\end{equation}•\\
+and $d(i)$ has the same value $d$ for all $i$. A Markov Chain is said to be aperiodic if $d=1$ \cite{text}\\\\
+for the Markov Chain on figure \ref{fig:MC1} at $n = 1$
+$$
+P^1=\begin{bmatrix} 
+0.3 & 0.7 & 0 \\
+0.1 & 0.4 & 0.5\\
+1    & 0     &0
+\end{bmatrix}
+$$
+already we can find $ i$ such that $P(i,i)>0$ . For example $P(0,0)=0.3>0$ and the $ g.c.d $ of any set of integers that contains $1$ is $1$.
+hence figure \ref{fig:MC1} is aperiodic.\\\\
+Ans.
+\textbf{Irreducible} and \textbf{Aperiodic}. 
+
+\subsection*{(b) invariant distribution ($\pi$) }
+
 \begin{eqnarray}
-\pi_j = \sum_{n=0}^{n} \pi_k p_{kj}
+\pi_j = \sum_{k=1}^{n} \pi_k p_{kj}
 \end{eqnarray}•
 
 \begin{eqnarray}
 \pi_0 = \pi_0 P_{00} + \pi_1 P_{10} + \pi_2 P_{20}\\
 \pi_1 = \pi_0 P_{01} + \pi_1 P_{11} + \pi_2 P_{21}\\
-\pi_2 = \pi_0 P_{02} + \pi_1 P_{12} + \pi_2 P_{22}\\
+\pi_2 = \pi_0 P_{02} + \pi_1 P_{12} + \pi_2 P_{22}
 \end{eqnarray}
 
-%i.e $\pi = \pi P$\\
+i.e $\pi = \pi P$\\
 
 $$
 P=\begin{bmatrix} 
@@ -107,7 +194,7 @@ $$
 \pi_0+\pi_1+\pi_2 = 1
 \end{eqnarray}•
 
-lets write everything interms of $\pi_0$\\
+lets write everything interms of $\pi_1$\\
 \begin{eqnarray}
 \pi_1=\pi_1\\
 \pi_2=0.5\pi_1\\
@@ -135,34 +222,50 @@ $$
 \end{bmatrix}•
 $$
 \subsection*{(c) Expected Time from 0 to 2}
-$$\beta(2) = 0$$
-$$\beta(0) = 1+0.7\beta(1) + 0.3\beta(0)$$
-$$\beta(1) = 1+0.1\beta(1) +0.4\beta(1) + 0.5\beta(2) $$
+
+We can calculate $\beta(0)$ \\\\ i.e\\$\beta(0)= E[$average time to reach $2$ $|$ current state is $0] $
+\begin{eqnarray}
+\beta(2) = 0\\
+\beta(0) = 1+0.7\beta(1) + 0.3\beta(0)\\
+\beta(1) = 1+0.1\beta(1) +0.4\beta(1) + 0.5\beta(2) 
+\end{eqnarray}•
+
 since $\beta(2)=0$
-$$\beta(1) = 1+0.1\beta(0) + 0.4\beta(1)$$
-$$\beta(0) = 1+0.3\beta(0) + 0.7\beta(1)$$
-$$0.7\beta(0)-0.7\beta(1) = 1$$
-$$0.6\beta(1)-0.1\beta(0) = 1$$
-solving the eqn n1 and n2 we get $\beta(0) = 3.708$ and $\beta(1)= 2.286$
-so the expected time from $0$ to $2$ is $ 3.708$
+\begin{eqnarray}
+\beta(1) = 1+0.1\beta(0) + 0.4\beta(1)
+\beta(0) = 1+0.3\beta(0) + 0.7\beta(1)
+\end{eqnarray}•
+
+\begin{equation}\label{eq:1}
+0.7\beta(0)-0.7\beta(1) = 1
+\end{equation}•
+\begin{equation}\label{eq:2}
+0.6\beta(1)-0.1\beta(0) = 1
+\end{equation}•
+solving the equations (\ref{eq:1}) and (\ref{eq:2}) we get $\beta(0) \approx 3.708$ and $\beta(1)\approx 2.286$\\\\
+Ans.
+So the expected time from $0$ to $2$ is $ 3.708$
 
 
 \newpage
 
 \subsection*{(d) Probability that starting from 0, the MC has reached 2 after $n$-steps  vs $ n$}
+\lstinputlisting[language=Octave]{test2d.m}
 \begin{figure}[h]
         \includegraphics[scale=0.35]{2d}
         \caption{Probability that starting from 0, the MC has reached 2 after $n$-steps  vs $ n$}
 \end{figure}
 \newpage
 
-\subsection*{(e) Expected Time from 0 to 2}
+\subsection*{(e) Fraction of Time}
+\lstinputlisting[language=Octave]{test2e.m}
 \begin{figure}[h]
         \includegraphics[scale=0.35]{2e}
         \caption{Probability that starting from 0, the MC has reached 2 after $n$-steps  vs $ n$}
 \end{figure}
 \newpage
 \subsection*{(f) $\pi_n$  vs $n$}
+\lstinputlisting[language=Octave]{test2f.m}
 \begin{figure}[htbp]
         \includegraphics[scale=0.35]{2f}
         \caption{$\pi_n$ vs $n$}
@@ -171,10 +274,152 @@ so the expected time from $0$ to $2$ is $ 3.708$
 \section*{Q3}
 \subsection*{(a) Page Rank}
 we can rank the states by their value in the invariant distribution($\pi$)\\\\
-1. state(page) 2\\
-2. state(page) 1\\
-3. state(page) 3\\
-\subsection*{(b) Page Rank}
-\subsection*{(c) Page Rank}
+1. state(page) 1\\
+2. state(page) 0\\
+3. state(page) 2\\
+\subsection*{(b) Removing self connections and Normalizing}
+After removing the self connections, there are an infinit number of ways of normalizing the MC. One way is \\
 
+\begin{figure}[h]
+ \begin{tikzpicture}[font=\sffamily]
+        % Setup the style for the states
+        \tikzset{node style/.style={state, 
+                                    minimum width=1.5cm,
+                                    line width=1mm,
+                                   }}
+        % Draw the states
+        \node[node style] at (3, 0)     (bull)     {0};
+        \node[node style] at (7, 0)     (bear)   {1};
+        \node[node style] at (5, -2) (stagnant) {2};
+ 
+        % Connect the states with arrows
+        \draw[every loop,
+              auto=right,
+              line width=1mm,
+              >=latex]
+            (bull)     edge[bend left=20, auto=left] node {1} (bear)
+            (bear)     edge[bend left=20]            node {0.3} (bull)
+            (bear)     edge[bend left=20, auto=left] node {0.7} (stagnant)
+            (stagnant) edge[bend left=20, auto=left] node {1} (bull)  ;
+
+             
+            %(bull) edge[loop left] node {0.3} (bull)
+	 %(bear) edge[loop right] node {0.4} (bear);
+            
+    \end{tikzpicture}
+    \caption{Updated MC}
+\end{figure}
+
+\subsection*{(c) Adding States to Trick the MC}
+After adding 1a and 0a  we get a Markov Chain that looks like figure \ref{fig:MC3} 
+\begin{figure}[h]
+ \begin{tikzpicture}[font=\sffamily]
+        % Setup the style for the states
+        \tikzset{node style/.style={state, 
+                                    minimum width=1cm,
+                                    line width=1mm,
+                                   }}
+        % Draw the states
+        \node[node style] at (3, 0)     (bull)     {0};
+        \node[node style] at (7, 0)     (bear)   {1};
+        \node[node style] at (10, 0)    (d1)     {1a};
+        \node[node style] at (0, 0)      (d2)     {0a};
+        \node[node style] at (5, -2) (stagnant) {2};
+ 
+        % Connect the states with arrows
+        \draw[every loop,
+              auto=right,
+              line width=1mm,
+              >=latex]
+            (bull)     edge[bend left=20, auto=left] node {0.7} (bear)
+            (bear)     edge[bend left=20]            node {0.1} (bull)
+            (bear)     edge[bend left=20, auto=left] node {0.5} (stagnant)
+            (stagnant) edge[bend left=20, auto=left] node {1} (bull)
+            (d2) edge[bend left=20, auto=left] node {1} (bull)
+            (bull) edge[bend left=20, auto=left] node {0.3} (d2)
+            (d1) edge[bend left=20, auto=left] node {1} (bear)
+            (bear) edge[bend left=20, auto=left] node {0.4} (d1)  
+            ;
+  
+    \end{tikzpicture}
+    \caption{Updated MC}
+    \label{fig:MC3}
+    \end{figure}
+$$
+P=\begin{bmatrix} 
+0&1&0&0&0\\
+0.3&0&0.7& 0&0 \\
+0&0.1&0&0.5&0.4\\
+0&1&0&0&0\\
+0&0&1&0&0\\
+
+\end{bmatrix}
+$$
+
+\begin{eqnarray}
+\pi_{0a} = 0.3\pi_0 \\
+\pi_0 = \pi_{0a}+ 0.1\pi_1 + \pi_2  \\
+\pi_1 = 0.7\pi_0+\pi_{1a}\\ 
+\pi_2 = 0.5\pi_1\\ 
+\pi_{1a} = 0.4\pi_1\\ 
+\pi_{0a}+\pi_0+\pi_1+\pi_2+\pi_{1a} = 1
+\end{eqnarray}•
+
+lets write everything interms of $\pi_1$\\
+
+\begin{eqnarray}
+\pi_1=\pi_1\\
+\pi_2=0.5\pi_1\\
+\pi_{1a}=0.4\pi_1\\
+\pi_0 = 0.3\pi_0 + 0.1\pi_1 + 0.5\pi_1\\
+0.7\pi_0=0.6\pi_1\\
+\pi_0 = \frac{6}{7}\pi_1\\
+\pi_{0a} = 0.3.\frac{6}{7}\pi_1=\frac{18}{70}\pi_1\\
+\frac{18}{70}\pi_1+\frac{6}{7}\pi_1+\pi_1+\frac{1}{2}\pi_1+\frac{4}{10}\pi_1 = 1\\
+\pi_1 = \frac{70}{211}\approx 0.331\\
+\end{eqnarray}•
+similarly  $\pi_{oa} = \frac{18}{70}\pi_1\approx0.085$, $\pi_0=\frac{6}{7}\pi_1\approx0.284$, $\pi_2=0.5\pi_1\approx0.165$, $\pi_{1a}=0.4\pi_1\approx0.132$
+$$
+\pi = \begin{bmatrix}
+0.085 \quad 0.284 \quad 0.331 \quad 0.165 \quad 0.132    
+\end{bmatrix}•
+$$
+\\\\\\\\\\We can rank the states(0, 1  and 2 ) by their value in the invariant distribution($\pi$) form highest to lowest\\\\
+1. state(page) 1\\
+2. state(page) 0\\
+3. state(page) 2\\
+
+
+for the MC in (b)
+\begin{eqnarray}
+\pi_0  = 0.3\pi_1 + \pi_2\\
+\pi_1  = \pi_0\\
+\pi_2  = 0.7\pi_1\\
+\pi_0+\pi_1+\pi_2=1
+\end{eqnarray}•
+solving the above equations we get\\
+$$
+\pi = \begin{bmatrix}
+\frac{10}{27} \quad \frac{10}{27} \quad \frac{7}{27}    
+\end{bmatrix}•
+$$
+
+So the ranking for (b) would be 
+1. state(page) 1= state(page) 0 i.e page1 and page 2 have the \\
+2. state(page) 2\\
+
+[COMPARE THE THREE MCS]
+\newpage
+
+
+	
+\begin{thebibliography}{9}
+\bibitem{irreducible} 
+https://pages.dataiku.com/hubfs/Dataiku%20Dec%202016/Files/lecture3.pdf?t=1487954799912
+
+\bibitem{text} 
+Jean Walrand. 
+\textit{Probability in Electrical Engineering and Computer science}. 
+Jean Walrand, 2014.
+\end{thebibliography}
 \end{document}
