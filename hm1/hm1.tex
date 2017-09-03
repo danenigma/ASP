@@ -142,7 +142,6 @@ A markov chain is said to be Irreducible if
 \begin{equation}
 \forall i,j \in S, \exists m < \infty : P(X_{n+m} = j|X_n=i )>0
 \end{equation}•
-
 i.e regardless the present state we can reach any other state in finit time.\cite{irreducible}
 On the Markov Chain in figure \ref{fig:MC1} we can go from any of the  states  to the other states in a finit number of steps hence it is irreducible.
 \subsubsection*{Periodicity}
@@ -250,36 +249,53 @@ So the expected time from $0$ to $2$ is $ 3.708$
 \newpage
 
 \subsection*{(d) Probability that starting from 0, the MC has reached 2 after $n$-steps  vs $ n$}
-\lstinputlisting[language=Octave]{test2d.m}
+
+The $n$-step transition probability is defined by \cite{mit}\\
+\begin{equation}
+r_{ij}(n) = P(X_n = j | X_0 = i)
+\end{equation}
+$r_{ij}(n)$ is the probability that the state after n time periods will be $j$, given that the current state is $i$.\\\\
+We can get $r_{ij}(n)$ by using  Chapman-Kolmogorov Equation \cite{mit}
+
+\begin{equation}
+r_{ij}(n) = \sum_{k=1}^{m}r_{ik}(n - 1)p_{kj}
+\end{equation}•
+for $n > 1$, and all $i$, $j$, starting with
+$$r_{ij}(1) = P_{ij}$$
+[CODE] = Code Appendix 2. d 
 \begin{figure}[h]
-        \includegraphics[scale=0.35]{2d}
+\hspace*{-4cm}
+        \includegraphics[scale=0.45]{2d}
         \caption{Probability that starting from 0, the MC has reached 2 after $n$-steps  vs $ n$}
 \end{figure}
 \newpage
-
 \subsection*{(e) Fraction of Time}
-\lstinputlisting[language=Octave]{test2e.m}
+[CODE] = Code Appendix 2. e 
 \begin{figure}[h]
-        \includegraphics[scale=0.35]{2e}
-        \caption{Probability that starting from 0, the MC has reached 2 after $n$-steps  vs $ n$}
-\end{figure}
+\hspace*{-6cm}
+        \includegraphics[scale=0.6]{2e}
+        \caption{Fraction of time it spends in each of the states  vs $ n$}
+\end{figure}\\
+Remark:\\
+On every run we get slightly different outcome just because of the inherent randomness of the Markov chain.
+But for large $n$ all of the states will converge to the values in the invariant distribution.
 \newpage
 \subsection*{(f) $\pi_n$  vs $n$}
-\lstinputlisting[language=Octave]{test2f.m}
+[CODE] = Code Appendix 2. f 
 \begin{figure}[htbp]
-        \includegraphics[scale=0.35]{2f}
+\hspace*{-6cm}
+        \includegraphics[scale=0.5]{2f}
         \caption{$\pi_n$ vs $n$}
 \end{figure}
 \newpage 
 \section*{Q3}
 \subsection*{(a) Page Rank}
-we can rank the states by their value in the invariant distribution($\pi$)\\\\
+We can rank the states by their value in the invariant distribution($\pi$)\\\\
 1. state(page) 1\\
 2. state(page) 0\\
 3. state(page) 2\\
 \subsection*{(b) Removing self connections and Normalizing}
-After removing the self connections, there are an infinit number of ways of normalizing the MC. One way is \\
-
+After removing the self connections, there are an infinit number of ways of normalizing the Markov Chain. One way is \\
 \begin{figure}[h]
  \begin{tikzpicture}[font=\sffamily]
         % Setup the style for the states
@@ -402,17 +418,33 @@ $$
 \pi = \begin{bmatrix}
 \frac{10}{27} \quad \frac{10}{27} \quad \frac{7}{27}    
 \end{bmatrix}•
-$$
+$$\\
+So the ranking for (b) would be \\
+1. state(page) 1 = state(page) 0 \quad i.e page1 and page 2 have the same rank\\
+2. state(page) 2\\\\
+Remark:\\
+Compared to (a) adding the new states 0a and 1a do not change the ranking. On the other hand in (b), after removing and normalizing it, Pages 0 and 1 will have the same ranking because the exit probabilty  from 0 to 1 is 1(i.e if we are at Page 0 the next Page we will look at is guaranteed to be Page 1). In all cases page 2 is ranked last.
 
-So the ranking for (b) would be 
-1. state(page) 1= state(page) 0 i.e page1 and page 2 have the \\
-2. state(page) 2\\
-
-[COMPARE THE THREE MCS]
+\newpage
+\begin{appendix}
+\section*{Code Appendix}
+\subsection*{2. d}\label{test2d}
+\lstinputlisting[language=Octave]{chapmanKolmogorov.m}  
+\lstinputlisting[language=Octave]{test2d.m}  
+\subsection*{2. e \cite{text} Appendix C.3}\label{test2e}
+\lstinputlisting[language=Octave]{discrete.m}
+\lstinputlisting[language=Octave]{simMC.m}  
 \newpage
 
+\lstinputlisting[language=Octave]{get_frac_dist.m}  
 
-	
+\lstinputlisting[language=Octave]{test2e.m} 
+\newpage
+\subsection*{2. f}
+\lstinputlisting[language=Octave]{PI.m}
+\lstinputlisting[language=Octave]{PIN.m}
+\lstinputlisting[language=Octave]{test2f.m}
+\end{appendix}•
 \begin{thebibliography}{9}
 \bibitem{irreducible} 
 https://pages.dataiku.com/hubfs/Dataiku%20Dec%202016/Files/lecture3.pdf?t=1487954799912
@@ -421,5 +453,9 @@ https://pages.dataiku.com/hubfs/Dataiku%20Dec%202016/Files/lecture3.pdf?t=148795
 Jean Walrand. 
 \textit{Probability in Electrical Engineering and Computer science}. 
 Jean Walrand, 2014.
+\bibitem{mit} 
+Dimitri P. Bertsekas and John N. Tsitsiklis.
+\textit{Introduction to Probability}. 
+LECTURE NOTES Course 6.041-6.431 M.I.T. FALL 2000
 \end{thebibliography}
 \end{document}

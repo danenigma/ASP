@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  2 SEP 2017 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  3 SEP 2017 08:36
 entering extended mode
 **./hm1.tex
 (hm1.tex
@@ -637,12 +637,12 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--166
+Underfull \hbox (badness 10000) in paragraph at lines 160--165
 
  []
 
@@ -651,7 +651,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
@@ -659,7 +659,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
@@ -677,7 +677,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
@@ -694,73 +694,62 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--248
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
 
  []
 
-[4] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (test2d.m
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 9.
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 9.
-)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--259
+
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
 <images/2d.jpg, id=42, 1371.1225pt x 653.44125pt>
 File: images/2d.jpg Graphic file (type jpg)
  <use images/2d.jpg>
-Package pdftex.def Info: images/2d.jpg used on input line 255.
-(pdftex.def)             Requested size: 479.90007pt x 228.70786pt.
+Package pdftex.def Info: images/2d.jpg used on input line 268.
+(pdftex.def)             Requested size: 616.99944pt x 294.04584pt.
 
-Overfull \hbox (119.90007pt too wide) in paragraph at lines 255--256
-[][] 
+Overfull \hbox (145.62175pt too wide) in paragraph at lines 267--269
+[]|  [] 
  []
 
-[5 <./images/2d.jpg>] (test2e.m)
-<images/2e.jpg, id=50, 1371.1225pt x 653.44125pt>
+[5 <./images/2d.jpg>] <images/2e.jpg, id=46, 1123.19624pt x 572.1375pt>
 File: images/2e.jpg Graphic file (type jpg)
- <use images/2e.jpg>
-Package pdftex.def Info: images/2e.jpg used on input line 263.
-(pdftex.def)             Requested size: 479.90007pt x 228.70786pt.
 
-Overfull \hbox (119.90007pt too wide) in paragraph at lines 263--264
-[][] 
+<use images/2e.jpg>
+Package pdftex.def Info: images/2e.jpg used on input line 276.
+(pdftex.def)             Requested size: 673.92294pt x 343.28514pt.
+
+Overfull \hbox (145.63976pt too wide) in paragraph at lines 275--277
+[]|  [] 
  []
 
-[6 <./images/2e.jpg>] (test2f.m
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
-)
-<images/2f.jpg, id=55, 1371.1225pt x 653.44125pt>
+[6 <./images/2e.jpg>] <images/2f.jpg, id=51, 1371.1225pt x 653.44125pt>
 File: images/2f.jpg Graphic file (type jpg)
- <use images/2f.jpg>
-Package pdftex.def Info: images/2f.jpg used on input line 270.
-(pdftex.def)             Requested size: 479.90007pt x 228.70786pt.
 
-Overfull \hbox (119.90007pt too wide) in paragraph at lines 270--271
-[][] 
+<use images/2f.jpg>
+Package pdftex.def Info: images/2f.jpg used on input line 287.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 286--288
+[]|  [] 
  []
 
 [7 <./images/2f.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 276--280
+Underfull \hbox (badness 10000) in paragraph at lines 293--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--280
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 293--297
 
  []
 
@@ -769,7 +758,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
@@ -780,38 +769,38 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--391
+Underfull \hbox (badness 10000) in paragraph at lines 402--407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--391
+Underfull \hbox (badness 10000) in paragraph at lines 402--407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--391
+Underfull \hbox (badness 10000) in paragraph at lines 402--407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--391
+Underfull \hbox (badness 10000) in paragraph at lines 402--407
 
  []
 
 
-Overfull \hbox (14.92018pt too wide) in paragraph at lines 386--391
+Overfull \hbox (14.92018pt too wide) in paragraph at lines 402--407
 \OT1/cmr/m/n/10.95 We can rank the states(0, 1 and 2 ) by their value in the in
 -vari-ant distribution($\OML/cmm/m/it/10.95 $\OT1/cmr/m/n/10.95 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--391
+Underfull \hbox (badness 10000) in paragraph at lines 402--407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--391
+Underfull \hbox (badness 10000) in paragraph at lines 402--407
 
  []
 
@@ -820,14 +809,43 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
+Underfull \hbox (badness 10000) in paragraph at lines 415--417
 
  []
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
-[10] [11
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--427
+
+ []
+
+[10] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(chapmanKolmogorov.m
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+)
+(test2d.m
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 9.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 9.
+) (discrete.m) (simMC.m) [11] (get_frac_dist.m) (test2e.m) [12] (PI.m) (PIN.m) 
+(test2f.m)
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+
+[13] [14
 
 ] (hm1.aux)
 
@@ -835,13 +853,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15790 strings out of 493323
- 309700 string characters out of 3139060
- 419928 words of memory out of 3000000
- 19037 multiletter control sequences out of 15000+200000
+ 15837 strings out of 493323
+ 310184 string characters out of 3139060
+ 482699 words of memory out of 3000000
+ 19066 multiletter control sequences out of 15000+200000
  12557 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,76p,408b,1803s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,76p,408b,1788s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -859,9 +877,9 @@ blic/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
 fb>
-Output written on hm1.pdf (12 pages, 410533 bytes).
+Output written on hm1.pdf (15 pages, 410247 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

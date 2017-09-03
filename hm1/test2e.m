@@ -14,6 +14,6 @@ hold on;
 scatter(x,Y(:,2),'o');
 scatter(x,Y(:,3),'x');
 hold off;
-legend('state1','state2','state3');
+legend('state0','state1','state2');
 xlabel('n(number of steps)');
 ylabel('fraction of time spent')
