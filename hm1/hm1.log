@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  3 SEP 2017 08:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  3 SEP 2017 09:40
 entering extended mode
 **./hm1.tex
 (hm1.tex
@@ -576,59 +576,59 @@ ABD: EveryShipout initializing macros
 \c@lstlisting=\count137
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] <images/BC.png, id=10, 35
-6.0803pt x 219.82124pt>
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [1] <images/BC.png, id=14
+, 356.0803pt x 219.82124pt>
 File: images/BC.png Graphic file (type png)
 
 <use images/BC.png>
-Package pdftex.def Info: images/BC.png used on input line 48.
+Package pdftex.def Info: images/BC.png used on input line 57.
 (pdftex.def)             Requested size: 90.0pt x 55.55891pt.
- <images/AnBc.png, id=12, 359.09157pt x 221.32687pt>
+ <images/AnBc.png, id=16, 359.09157pt x 221.32687pt>
 File: images/AnBc.png Graphic file (type png)
 
 <use images/AnBc.png>
-Package pdftex.def Info: images/AnBc.png used on input line 53.
+Package pdftex.def Info: images/AnBc.png used on input line 62.
 (pdftex.def)             Requested size: 90.0pt x 55.47003pt.
- <images/A-B.png, id=13, 357.58594pt x 220.57407pt>
+ <images/A-B.png, id=17, 357.58594pt x 220.57407pt>
 File: images/A-B.png Graphic file (type png)
 
 <use images/A-B.png>
-Package pdftex.def Info: images/A-B.png used on input line 58.
+Package pdftex.def Info: images/A-B.png used on input line 67.
 (pdftex.def)             Requested size: 90.0pt x 55.5136pt.
 File: images/BC.png Graphic file (type png)
  <use images/BC.png>
-Package pdftex.def Info: images/BC.png used on input line 70.
+Package pdftex.def Info: images/BC.png used on input line 79.
 (pdftex.def)             Requested size: 90.0pt x 55.55891pt.
 
-<images/AuBc.png, id=14, 356.83313pt x 219.82124pt>
+<images/AuBc.png, id=18, 356.83313pt x 219.82124pt>
 File: images/AuBc.png Graphic file (type png)
  <use images/AuBc.png>
-Package pdftex.def Info: images/AuBc.png used on input line 75.
+Package pdftex.def Info: images/AuBc.png used on input line 84.
 (pdftex.def)             Requested size: 90.0pt x 55.44153pt.
 
-<images/AcnB.png, id=15, 362.10281pt x 223.58531pt>
+<images/AcnB.png, id=19, 362.10281pt x 223.58531pt>
 File: images/AcnB.png Graphic file (type png)
  <use images/AcnB.png>
-Package pdftex.def Info: images/AcnB.png used on input line 80.
+Package pdftex.def Info: images/AcnB.png used on input line 89.
 (pdftex.def)             Requested size: 90.0pt x 55.56866pt.
 
-<images/AcnBc.png, id=16, 358.33875pt x 221.32687pt>
+<images/AcnBc.png, id=20, 358.33875pt x 221.32687pt>
 File: images/AcnBc.png Graphic file (type png)
  <use images/AcnBc.png>
-Package pdftex.def Info: images/AcnBc.png used on input line 86.
+Package pdftex.def Info: images/AcnBc.png used on input line 95.
 (pdftex.def)             Requested size: 90.0pt x 55.58824pt.
 
-<images/B-A.png, id=17, 359.09157pt x 222.07968pt>
+<images/B-A.png, id=21, 359.09157pt x 222.07968pt>
 File: images/B-A.png Graphic file (type png)
  <use images/B-A.png>
-Package pdftex.def Info: images/B-A.png used on input line 97.
+Package pdftex.def Info: images/B-A.png used on input line 106.
 (pdftex.def)             Requested size: 90.0pt x 55.6587pt.
 File: images/A-B.png Graphic file (type png)
 
 <use images/A-B.png>
-Package pdftex.def Info: images/A-B.png used on input line 101.
+Package pdftex.def Info: images/A-B.png used on input line 110.
 (pdftex.def)             Requested size: 90.0pt x 55.5136pt.
- [1 <./images/BC.png> <./images/AnBc.png> <./images/A-B.png> <./images/AuBc.png
+ [2 <./images/BC.png> <./images/AnBc.png> <./images/A-B.png> <./images/AuBc.png
 > <./images/AcnB.png> <./images/AcnBc.png> <./images/B-A.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -637,170 +637,119 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--154
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--165
+Underfull \hbox (badness 10000) in paragraph at lines 169--174
 
  []
 
-[2]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-
- []
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
 [3]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--247
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--259
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
-<images/2d.jpg, id=42, 1371.1225pt x 653.44125pt>
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--256
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--268
+
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+<images/2d.jpg, id=45, 1371.1225pt x 653.44125pt>
 File: images/2d.jpg Graphic file (type jpg)
  <use images/2d.jpg>
-Package pdftex.def Info: images/2d.jpg used on input line 268.
+Package pdftex.def Info: images/2d.jpg used on input line 277.
 (pdftex.def)             Requested size: 616.99944pt x 294.04584pt.
 
-Overfull \hbox (145.62175pt too wide) in paragraph at lines 267--269
+Overfull \hbox (145.62175pt too wide) in paragraph at lines 276--278
 []|  [] 
  []
 
-[5 <./images/2d.jpg>] <images/2e.jpg, id=46, 1123.19624pt x 572.1375pt>
+[6 <./images/2d.jpg>] <images/2e.jpg, id=50, 1123.19624pt x 572.1375pt>
 File: images/2e.jpg Graphic file (type jpg)
 
 <use images/2e.jpg>
-Package pdftex.def Info: images/2e.jpg used on input line 276.
+Package pdftex.def Info: images/2e.jpg used on input line 285.
 (pdftex.def)             Requested size: 673.92294pt x 343.28514pt.
 
-Overfull \hbox (145.63976pt too wide) in paragraph at lines 275--277
+Overfull \hbox (145.63976pt too wide) in paragraph at lines 284--286
 []|  [] 
  []
 
-[6 <./images/2e.jpg>] <images/2f.jpg, id=51, 1371.1225pt x 653.44125pt>
+[7 <./images/2e.jpg>] <images/2f.jpg, id=54, 1371.1225pt x 653.44125pt>
 File: images/2f.jpg Graphic file (type jpg)
 
 <use images/2f.jpg>
-Package pdftex.def Info: images/2f.jpg used on input line 287.
+Package pdftex.def Info: images/2f.jpg used on input line 296.
 (pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
 
-Overfull \hbox (157.27638pt too wide) in paragraph at lines 286--288
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 295--297
 []|  [] 
  []
 
-[7 <./images/2f.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 293--297
+[8 <./images/2f.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 302--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--297
-
- []
-
-[8]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 384--385
-
- []
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--407
-
- []
-
-
-Overfull \hbox (14.92018pt too wide) in paragraph at lines 402--407
-\OT1/cmr/m/n/10.95 We can rank the states(0, 1 and 2 ) by their value in the in
--vari-ant distribution($\OML/cmm/m/it/10.95 $\OT1/cmr/m/n/10.95 )
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--407
+Underfull \hbox (badness 10000) in paragraph at lines 302--306
 
  []
 
@@ -809,7 +758,58 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--417
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--416
+
+ []
+
+
+Overfull \hbox (14.92018pt too wide) in paragraph at lines 411--416
+\OT1/cmr/m/n/10.95 We can rank the states(0, 1 and 2 ) by their value in the in
+-vari-ant distribution($\OML/cmm/m/it/10.95 $\OT1/cmr/m/n/10.95 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--416
+
+ []
+
+[10]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--426
 
  []
 
@@ -817,11 +817,11 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--427
+Underfull \hbox (badness 10000) in paragraph at lines 430--436
 
  []
 
-[10] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+[11] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (chapmanKolmogorov.m
@@ -839,13 +839,13 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 9.
-) (discrete.m) (simMC.m) [11] (get_frac_dist.m) (test2e.m) [12] (PI.m) (PIN.m) 
+) (discrete.m) (simMC.m) [12] (get_frac_dist.m) (test2e.m) [13] (PI.m) (PIN.m) 
 (test2f.m)
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-[13] [14
+[14] [15
 
 ] (hm1.aux)
 
@@ -877,9 +877,9 @@ blic/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
 fb>
-Output written on hm1.pdf (15 pages, 410247 bytes).
+Output written on hm1.pdf (16 pages, 411131 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 141 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

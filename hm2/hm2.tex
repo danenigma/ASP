@@ -1,0 +1,131 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+
+\graphicspath{ {images/} }
+\begin{document}
+\title{\color{red}CARNEGIE MELLON UNIVERSITY\\
+APPLIED STOCHASTIC PROCESSES  (COURSE 18-751)\\
+HOMEWORK 2}
+\author{Daniel Fekadu}
+\date{\today}
+\maketitle
+\clearpage
+\newpage
+\section*{Q.1\quad Compute the expected discounted future reward($\gamma (i)$)}
+
+we can compute the expected discounted future reward by using the following formula
+\begin{equation}
+\gamma(i) = h(i) + \beta \sum_{j}P(i,j)\gamma(j)
+\end{equation}•
+where $\beta$ is the discount factor and $h(i)$ is the reward on state $i$.
+\begin{equation}\label{eq:2}
+\gamma(A) = 0 +  0.8*(0.5*\gamma(B)+0.5*\gamma(D))
+\end{equation}•
+\begin{eqnarray}
+\gamma(B) = 0 +  0.8*\gamma(C)\\
+\gamma(C) = 0 +  0.8*\gamma(A)\\
+\gamma(D) = 1 +  0.8*(\frac{1}{3}*\gamma(B)+\frac{1}{3}*\gamma(E)+\frac{1}{3}*\gamma(A))\\
+\gamma(E) = 2 +  0.8*(0.5*\gamma(B)+0.5*\gamma(C))
+\end{eqnarray}•
+Lets write all them in terms of  $\gamma(A)$\\\\
+\begin{eqnarray}
+\gamma(A) = \gamma(A)\\
+\gamma(B) = 0.64*\gamma(A)\\
+\gamma(C) = 0.8*\gamma(A)\\
+\gamma(D) = 1.5333+0.5909*\gamma(A)\\
+\gamma(E) = 2+0.576*\gamma(A)
+\end{eqnarray}•
+writing eqn (\ref{eq:2}) interms of $\gamma(A)$s we get \\
+\begin{eqnarray}
+\gamma(A) = 0.64\gamma(A) + 0.4*0.5909*\gamma(A) + 0.4*1.5333\\
+0.50764*\gamma(A) = 0.4*1.5333\\
+\end{eqnarray}
+so $\gamma(A)=1.2082$ ,$\gamma(A)=1.2082$,\quad $\gamma(B)=0.64*\gamma(A)=0.7732$,\\ \quad$\gamma(C)=0.8*\gamma(A)=0.9666$,\quad$\gamma(D)=1.5333+0.5909*\gamma(A)=2.2472$,\quad$\gamma(E)=2+0.576*\gamma(A)=2.6959$\\\\
+Ans.\\
+$\gamma(A)=1.2082$,\quad $\gamma(B))=0.7732$,\quad $\gamma(C))=0.9666$,\quad $\gamma(D))=2.2472$,\quad $\gamma(E))=2.6959$
+\newpage
+\section*{Q.2\quad Prove the following}
+
+\begin{equation}
+\bigcap\limits_{i=1}^{\infty}E_{i} \subset\Bigg(\bigcap\limits_{i=1}^{\infty}E_{i}^c\Bigg)^c 
+\end{equation}•\\
+soln.\\
+We can rewrite the RHS as (\ref{eq:3}) using De Morgan's law\\
+\begin{equation}\label{eq:3}
+\Bigg(\bigcap\limits_{i=1}^{\infty}E_{i}^c\Bigg)^c = \bigcup\limits_{i=1}^{\infty}E_{i} 
+\end{equation}•\\
+To prove that the LHS is a subset of RHS we can show that any arbitrary element of LHS is also an element if the RHS.\\
+lets say $e_{i}$ is an arbitrary element of LHS,  i.e $e_{i} \in \bigcap\limits_{i=1}^{\infty}E_{i} $ .This implies 
+$e_{i}$ is an element of any set $E_{i}$. Since all the elements of arbitrary set $E_{i}$ are also  elements of the union of the sets, $e_{i} \in \bigcup\limits_{i=1}^{\infty}E_{i}$ .\\
+Hence LHS is a subset of RHS. i.e $\bigcap\limits_{i=1}^{\infty}E_{i} \subset  \bigcup\limits_{i=1}^{\infty}E_{i} $
+which is the same as saying,\\
+\begin{equation}
+\bigcap\limits_{i=1}^{\infty}E_{i} \subset\Bigg(\bigcap\limits_{i=1}^{\infty}E_{i}^c\Bigg)^c 
+\end{equation}•\\
+ Can the left and right side ever be equal?\\
+ \textbf{YES}. When for example $E_{1}=E_{2}=E_{3}...=E_{i}=......$ , that is when all the $E_{i}$ s are the same.
+ The intersection and union of those sets would be the same as  anyone of the sets $E_{i}$.
+\newpage
+\section*{Q.3\quad }
+%\mathcal{F}
+\subsection*{(a) Show that the following statements are consistant with the three axioms of probability}
+The three axioms of probability are :\\
+(1)$P(A) \ge 0$ for all $A \subset S$ \\
+(2)$P(S) = 1$\\
+(3) if $A \cap B = \o$, then $P(A \cup B = P(A)+P(B)$  \\\\
+Assigning $P[\{1\}]=1$, $P[\{2\}]=1$ , $P[\{1,2\}]=2$ is consistant with the first axiom because all the elements of $\mathcal{F}$ have $P \ge 0$, we can also assign $P(S) = P(\{1,2,3,4,5,6\}) = 1$ so it satisfies the second axiom.
+When it comes to the third axiom, the only elements of $\mathcal{F}$ that are pair wise disjoint are \{1\} and \{2\}.\\\\
+ $P(\{1\}\cup \{2\})=P(\{1,2\}) = 2 = P(\{1\}) + P(\{2\})$ hence it is also consitstant with third axiom.\\
+ Therefor, $P[\{1\}]=1$, $P[\{2\}]=1$ , $P[\{1,2\}]=2$ is consistant with the three axioms of probability.
+
+\subsection*{(b)}
+
+\subsubsection*{Is $\mathcal{F}$ a sigma field?}
+\textbf{NO}.\\
+To be a sigma field $\mathcal{F}$ has to be closed under complementation.And we can clearly see that $\mathcal{F}$ doesn't satisfy this property.$\{1\}^c$,$\{2\}^c$ and $\{1,2\}^c$ are all missing. \\
+\subsubsection*{Minimum number of additional events required to make  $\mathcal{F}$ a sigma field.}
+\textbf{3}.\\
+we need to add $\{1\}^c$ which is $\{2,3,4,5,6\}^c$ ,$\{2\}^c$ which is $\{1,3,4,5,6\}^c$ and finally $\{1,2\}^c$ which is $\{3,4,5,6\}^c$ .\\
+\begin{equation}\label{eq:new_f}
+\mathcal{F} = \{ \o , \{1\},\{2\},\{1,2\},\{3,4,5,6\},\{1,3,4,5,6\},\{2,3,4,5,6\},\{1,2,3,4,5,6\}\}
+\end{equation}•
+\subsubsection*{Show that (a) is not true}
+for $\mathcal{F}$ in (\ref{eq:new_f}) if we assign  $P[\{1\}]=1$, $P[\{2\}]=1$ , $P[\{1,2\}]=2$\\
+$\implies P(\{1,2\} \cup \{3,4,5,6\})= P(\{1,2,3,4,5,6\})=P(S)=1$ \\
+lets assume  it is consistant with the third axiom,\\ that means $P(\{1,2\} \cup \{3,4,5,6\}) =  P(\{1,2\})+P(\{3,4,5,6\})$\\
+ $$P(\{1,2\})+P(\{3,4,5,6\}) = 1$$
+ $$2+ P(\{3,4,5,6\}) = 1 $$
+ $$ P(\{3,4,5,6\}) = -1 $$
+ i.e $P(\{3,4,5,6\}) \le 0$, thus violating the first axiom of probability.\\
+ So $P[\{1\}]=1$, $P[\{2\}]=1$ and $P[\{1,2\}]=2$ will not be consistant with the  axioms of probability if $\mathcal{F}$ is a sigma field.
+ 
+\newpage
+\section*{Q4}
+
+
+
+\newpage
+\section*{Q5}
+$P(+|D)=0.99$, $P(+|D^{c})=0.01$, $P(D)=\frac{1}{10000}=0.0001$ and since $P(D)+ P(D^c) = 1$ $P(D^c) = 0.9999$\\ 
+Where D = you have the disease and $+ = $ you tested positive .\\\\
+We are asked to compute, given that we tested positive for it, the probability that we actually have the disease (i.e $P(D|+)$).\\\\
+\begin{equation}
+P(D|+) =\frac{P(+|D)P(D)}{P(+)}
+\end{equation}• 
+\begin{equation}
+P(+) = P(+|D)P(D) +P(+|D^c)P(D^c)
+\end{equation}• 
+\begin{equation}
+P(D|+) =\frac{P(+|D)P(D)}{ P(+|D)P(D) +P(+|D^c)P(D^c)}
+\end{equation}• 
+hence 
+$$P(D|+) = \frac{0.99*0.0001}{0.99*0.0001  + 0.01*0.9999)}$$
+$$P(D|+) = 0.009803$$
+So we have a $<1\%$  chance of actually having the disease eventhough we tested positive for it.
+\newpage
+
+\section*{Q6}
+\end{document}
