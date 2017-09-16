@@ -1,0 +1,9 @@
+ Average Number of packets in Buffer: 5.43 
+ Fraction of time the buffer is empty: 0.07
+ The fraction of packet Arrivals that are blocked 0.0000
+
+ MU:0.01
+ Buffer Size: 10
+ Lamda:0.10
+ Number of Steps:100
+ Packet Loss:0.00 percent

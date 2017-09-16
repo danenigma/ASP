@@ -1,0 +1,14 @@
+N = 1000;%time steps
+State0 = 1;
+buffer_size =10;
+mu = 0.001;
+lambda = 0.1;
+a = lambda*(1-mu);
+b = mu*(1-lambda);
+c = 1-(a+b);
+P = get_stochastic_matrix_updated(buffer_size,lambda,mu);
+StateTrans = simMC(N,State0,P);
+[lost_packets, ~] = get_reward_on_state_trans(StateTrans,buffer_size+1,buffer_size+1,[a,c],1);
+percentage = 1;
+mu = 0.02:0.01:0.2; 
+[mu_found,load_mu,state_trans,lost_packets] = get_mu(N,State0,lambda,mu,buffer_size,percentage,'low');
