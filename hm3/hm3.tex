@@ -61,8 +61,19 @@ Agatha Niwomugizi
 \subsection*{(c)}
 
 \newpage
-\section*{Q2}
-\subsection*{(a)}
+\section*{Q.2 Generalized CLT}
+\subsection*{(a)\quad Show GCLT reduces to the usual i.i.d version of CLT}
+$$Yn = (X_1+X_2+ \dots +X_n-m_n)/Sn$$
+where $X_k$ is an independent random variable with $E[X_k]=\mu_k$ and $Var[X_k]= \sigma_k^2$ ,
+$m_n = (\mu_1+\mu_2+\dots +\mu_n)/s_n$ and $s_n^2=\sigma_1^2+\sigma_2^2+\dots+\sigma_n^2$\\\\
+since i.i.ds have identical distribution the have the same mean and variance\\
+i.e $\mu_1=\mu_2=\dots =\mu_n=\mu$ and $\sigma_1^2=\sigma_2^2=\dots=\sigma_n^2=\sigma^2$ \\
+$$m_n = (\mu_1+\mu_2+\dots +\mu_n)=n\mu$$
+$$s_n^2=(\sigma_1^2+\sigma_2^2+\dots+\sigma_n^2)=n\sigma^2$$
+$$Yn = \frac{(X_1+X_2+ \dots +X_n-n\mu)}{\sqrt{n\sigma^2}}$$
+$$Yn = \frac{(X_1+X_2+ \dots +X_n-n\mu)}{\sigma\sqrt{n}}$$
+hence , GCLT reduces to CLT when \{$X_k$\} are i.i.ds.
+
 \subsection*{(b)}
 \subsection*{(c)}
 \newpage
