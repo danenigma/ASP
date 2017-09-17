@@ -18,7 +18,7 @@ for i=1:length(Yns_c)
     Yns_c(i) = computeGCLT(X,mu,sigma);
 end
 Yns_c = Yns_c/sum(Yns_c);
-%**************************(d)**********************
+%**************************(c)**********************
 
 Yns_d = zeros(N,1);
 for i=1:length(Yns_d)
@@ -26,8 +26,7 @@ for i=1:length(Yns_d)
     Yns_d(i) = computeGCLT(X,mu,sigma);
 end
 Yns_d = Yns_d/sum(Yns_d);
-%**************************Ploting*******************
-%**************************Plot Histogram************
+
 figure
 subplot(2,2,1);
 hist(Yns_b);
@@ -38,18 +37,19 @@ title('c');
 subplot(2,2,3);
 hist(Yns_d);
 title('d');
-%**************************Normal Plot***************
+
 figure
 subplot(2,2,1);
 normplot(Yns_b);
 title('b');
+
 subplot(2,2,2);
 normplot(Yns_c);
 title('c');
 subplot(2,2,3);
 normplot(Yns_d);
 title('d');
-%**************************q-q Plot******************
+
 figure;
 subplot(2,2,1);
 qqplot(Yns_b);
