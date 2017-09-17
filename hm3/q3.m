@@ -1,5 +1,5 @@
-DEBUG = 0;
-N = 100;%time steps
+DEBUG = 1;
+N = 200;%time steps
 State0 = 1;
 lamda = 0.1;
 mu = 0.001:0.001:0.01; % 10% mu
@@ -23,13 +23,14 @@ for i=1:length(mu)
             fprintf('mu %0.3f satisfies loss value of %i percent with packet loss of %4.4f\n',...
             mu(i),percentage,lost_packets);
         end
+       
             
     end
 end
 if MU_FOUND
     % Some stat before modifying StateTrans
     
-    StateTrans(find(StateTrans==(BUFFER_SIZE+2)))=BUFFER_SIZE+1;% dropped == full
+    StateTrans(StateTrans==(BUFFER_SIZE+2))=BUFFER_SIZE+1;% dropped == full
     Avg_Number_Of_Packets   = mean(StateTrans);
     Fraction_Of_Time_BEmpty = mean(StateTrans==1);
     Fraction_Of_Time_BBlocked = lost_packets/100;

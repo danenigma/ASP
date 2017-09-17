@@ -7,7 +7,7 @@ Yns_b = zeros(N,1);
 mu     = mean(1:5);%mean of uniform dist
 sigma  = var(1:5);%var of uniform dist
 for i=1:length(Yns_b)
-    X = randi([1 5],1,10);
+    X = randi([1 5],1,10);%uniform distribution 1-5
     Yns_b(i) = computeGCLT(X,mu*ones(1,10),sigma*ones(1,10));
 end
 Yns_b = Yns_b/sum(Yns_b);
