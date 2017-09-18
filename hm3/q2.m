@@ -46,7 +46,7 @@ title('b');
 subplot(2,2,2);
 normplot(Yns_c);
 title('c');
-subplot(2,2,3);
+subplot(2,2,3); 
 normplot(Yns_d);
 title('d');
 %**************************q-q Plot******************

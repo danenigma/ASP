@@ -1,5 +1,5 @@
- Average Number of packets in Buffer: 4.89 
- Fraction of time the buffer is empty: 0.22
+ Average Number of packets in Buffer: 7.81 
+ Fraction of time the buffer is empty: 0.01
  The fraction of packet Arrivals that are blocked 0.0000
 
  MU:0.05

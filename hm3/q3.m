@@ -23,7 +23,7 @@ for i=1:length(mu)
             fprintf('mu %0.3f satisfies loss value of %i percent with packet loss of %4.4f\n',...
             mu(i),percentage,lost_packets);
         end
-       
+     
             
     end
 end
