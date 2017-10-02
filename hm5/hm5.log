@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  2 OCT 2017 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  2 OCT 2017 12:07
 entering extended mode
 **./hm5.tex
 (hm5.tex
@@ -654,20 +654,20 @@ Missing character: There is no ¢ in font cmr10!
 File: images/q2_b_1.jpg Graphic file (type jpg)
 
 <use images/q2_b_1.jpg>
-Package pdftex.def Info: images/q2_b_1.jpg used on input line 143.
+Package pdftex.def Info: images/q2_b_1.jpg used on input line 135.
 (pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
 
-Overfull \hbox (171.50276pt too wide) in paragraph at lines 142--144
+Overfull \hbox (171.50276pt too wide) in paragraph at lines 134--136
 []|  [] 
  []
 
 <images/q2_b_2.jpg, id=38, 1371.1225pt x 653.44125pt>
 File: images/q2_b_2.jpg Graphic file (type jpg)
  <use images/q2_b_2.jpg>
-Package pdftex.def Info: images/q2_b_2.jpg used on input line 148.
+Package pdftex.def Info: images/q2_b_2.jpg used on input line 140.
 (pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
 
-Overfull \hbox (171.50276pt too wide) in paragraph at lines 147--149
+Overfull \hbox (171.50276pt too wide) in paragraph at lines 139--141
 []|  [] 
  []
 
@@ -677,7 +677,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [5
 
  <./images/q2_b_1.jpg>] [6 <./images/q2_b_2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
  []
 
@@ -685,7 +685,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Overfull \hbox (25.20715pt too wide) detected at line 167
+Overfull \hbox (25.20715pt too wide) detected at line 159
 \OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 biterror\OMS/cmsy/
 m/n/10.95 j\OT1/cmr/m/n/10.95 1) = [][] \OML/cmm/m/it/10.95 f[]\OT1/cmr/m/n/10.
 95 (\OML/cmm/m/it/10.95 r\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 dr \OT1/cmr/m/
@@ -697,94 +697,94 @@ cmm/m/it/10.95 a[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--176
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--176
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--176
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
 
  []
 
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 181--184
+Underfull \hbox (badness 10000) in paragraph at lines 173--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--184
+Underfull \hbox (badness 10000) in paragraph at lines 173--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
 <images/q2_d_2.jpg, id=49, 562.1pt x 421.575pt>
 File: images/q2_d_2.jpg Graphic file (type jpg)
  <use images/q2_d_2.jpg>
-Package pdftex.def Info: images/q2_d_2.jpg used on input line 191.
+Package pdftex.def Info: images/q2_d_2.jpg used on input line 183.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
 <images/q2_d_1.jpg, id=50, 562.1pt x 421.575pt>
 File: images/q2_d_1.jpg Graphic file (type jpg)
  <use images/q2_d_1.jpg>
-Package pdftex.def Info: images/q2_d_1.jpg used on input line 196.
+Package pdftex.def Info: images/q2_d_1.jpg used on input line 188.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8 <./images/q2_d_2.jpg>] [9 <./images/q2_d_1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--206
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--206
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 205--207
 
  []
 
@@ -792,7 +792,7 @@ Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no ¢ in font cmr8!
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 10000) in paragraph at lines 209--213
 
  []
 
@@ -824,7 +824,7 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on hm5.pdf (12 pages, 291908 bytes).
+Output written on hm5.pdf (12 pages, 291912 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
