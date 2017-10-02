@@ -28,5 +28,5 @@ plot(cdf_x_given_1,cdf_x_given_0);
 hold on;
 xlabel('PFA');
 ylabel('PCD');
-title('ROC');
+title('ROC p = 0.5');
 

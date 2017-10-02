@@ -55,6 +55,60 @@ Agatha Niwomugizi
 \clearpage
 \setcounter{page}{1}
 \section*{Q.1}
+\subsection*{(a)}
+The codeword is in error when there are more than $e$ errors\\
+$\implies$
+$$P_{codeerror} =\sum_{j=e+1}^{n} \binom{n}{j}p^j(1-p)^{n-j}$$
+\subsection*{(b)}
+The most significant term in $P_{codeerror}$ is the first one.i.e when $j = e+1$\\\\
+$\implies$\\\\
+$$P_{codeerror} \approx \binom{n}{e+1}p^{e+1}(1-p)^{n-e-1}$$
+For small $p$ and $N<100$ $1-p \approx 1$ \\\\
+$\implies$\\
+$$P_{codeerror} \approx \binom{n}{e+1}p^{e+1}$$
+\subsection*{(c) Bit Error Rate}
+$$P(biterror|codeerror) \approx \frac{1}{2}$$
+$$\implies  P(biterror) = P(biterror|codeerror)P_{codeerror}+P(biterror|Nocodeerror)P(Nocodeerror)$$
+Since $P(biterror|Nocodeerror) = 0$
+$$ P_{biterror} = P(biterror|codeerror)P_{codeerror}$$
+$$ P_{biterror} \approx \frac{1}{2}P_{codeerror}$$
+$$ P_{biterror} \approx \frac{1}{2}\sum_{j=e+1}^{n} \binom{n}{j}p^j(1-p)^{n-j}$$
+\newpage
+\clearpage
+\subsection*{(d)}
+\textbf{BER for [1,1,0]}\\\\
+It is the same as sending a single bit across the channel hence, BER is the same as the channel bit rate\\
+$\implies P_{biterror}=p$\\
+$ p = 0.01 \implies P_{biterror} = 0.01$\\
+$ p = 0.001 \implies P_{biterror} = 0.001$\\
+$ p = 10^{-6} \implies P_{biterror} = 10^{-6}$\\\\
+\textbf{BER for [7,4,1]}\\\\
+$$P_{biterror}  = \frac{1}{2}P_{codeerror}$$
+$$ P_{biterror} = \frac{1}{2}\sum_{j=1+1}^{7} \binom{7}{j}p^j(1-p)^{7-j}$$
+$$ = \frac{1}{2}(1-\sum_{j=0}^{1} \binom{7}{j}p^j(1-p)^{7-j})$$
+$$ = \frac{1}{2}(1- \binom{7}{0}(1-p)^7 - \binom{7}{1}(1-p)^6)$$
+$$ = \frac{1}{2}(1- (1-p)^7 - 7(1-p)^6)$$
+$p = 0.01 \implies$ $P_{biterror} = \frac{1}{2}(1- (1-0.01)^7 - 7(1-0.01)^6) = 0.001$\\
+$p = 0.001 \implies$ $P_{biterror} = \frac{1}{2}(1- (1-0.001)^7 - 7(1-0.001)^6) = 1.04x10^{-5}$\\
+$p = 10^{-6} \implies$ $P_{biterror} = \frac{1}{2}(1- (1- 10^{-6})^7 - 7(1- 10^{-6})^6) =  1.05x10^{-11}$
+\subsection*{(e)}
+[1,1,0] has the same bit error rate as the channel\\
+$\implies p = 10^{-6}$  \\\\
+For [7,4,1]\\
+$$P_{biterror} = \frac{1}{2}P_{codeerror}$$
+$$P_{biterror} = \frac{1}{2}\binom{n}{e+1}p^{e+1} = 10^{-6}$$
+$$\implies p^{e+1} = \frac{2x10^{-6}}{\binom{n}{e+1}}$$
+$$ p^{2} = \frac{2x10^{-6}}{\binom{7}{2}}$$
+$$p = \sqrt{\frac{2x10^{-6}}{\binom{7}{2}}}$$
+$$p = 3.08x10^{-4}$$
+
+
+
+
+
+
+
+
 \newpage
 \clearpage
 \section*{Q.2}
@@ -134,15 +188,20 @@ $$P(biterror) = P(0)Q\big(\beta+a\big)+P(1)(1-Q\big(\beta-a\big))$$\\\\
  \subsection*{(d) ROC}
  \begin{figure}[h]
    \hspace*{-1cm}
+    \includegraphics[scale=0.5]{q2_d_2}
+    \caption{ROC for $a=0.5$,$p=0.5$}\label{fig:q2_d_1}
+\end{figure}
+ \begin{figure}[h]
+   \hspace*{-1cm}
     \includegraphics[scale=0.5]{q2_d_1}
-    \caption{ROC for $a=0.5$}\label{fig:q2_d_1}
+    \caption{ROC for $a=0.5$ $p = 0.1$}\label{fig:q2_d_1}
 \end{figure}
 \clearpage
 \newpage
 \section*{Q.3}
 \subsection*{(a) Code [1,1,0]}
 With MAP decision boundary when $p = 0.5$ \\
-bit error rate  $= P(biterror) =Q(a)$ from 2.c\\\\
+bit error rate  $= P(biterror)=P(codeerror) =Q(a)$ from 2.c\\\\
 $\implies$\\
 $$Q(a) = 10^{-6}$$
 $$a = Q^{-1}(10^{-6})$$
@@ -150,19 +209,21 @@ $$a =4.7534$$
 Average energy per bit $= \beta a^2=22.5950\beta$
 \subsection*{(b) Code [7,4,1]}
 With MAP decision boundary when $p = 0.5$ \\
-bit error rate  $= P(biterror) =Q(a)$ from 2.c\\\\
+$P(codeerror) =Q(a)$ from 2.c and $P(biterror) = \frac{1}{2}P(codeerror)$ from 1.c \\\\
+$$P(codeerror) = 2P(biterror) = 2*10^{-6}$$
 $\implies$\\
-$$Q(a) = 10^{-6}$$
-$$a = Q^{-1}(10^{-6})$$
-$$a =4.7534$$
-For every 4 bit we send 7 bit long code word. That means for every bit we will be using
-$\frac{7}{•4}$x(the energy to send a single bit).\\\\
-Average energy per bit $= \frac{7}{4}\beta a^2=39.5413\beta$
+$$Q(a) = 2*10^{-6}$$
+$$a = Q^{-1}(2*10^{-6})$$
+$$a =4.6114$$
+For every 4 bit we send 7 bit long codeword. That means for every bit we will need
+$\frac{7}{•4}$x(the energy to send a single bit) energy.\\\\
+Average energy per bit $= \frac{7}{4}\beta a^2=37.2135\beta$
 \subsection*{(c) Which of the two codes is the most efficient and by what factor}
-from energy consumption perspective (a) is more efficient.\\
-$factor =$ Average energy per bit (a)/ Average energy per bit (b) $=\frac{\beta a^2}{\frac{7}{4}\beta a^2}$\\
-$factor = \frac{4}{7}$\\
-i.e with code (a) we will need only $\frac{4}{7}$th of the energy will need with code  (b)
+From energy consumption perspective (a) is more efficient.\\
+$factor =$ Average energy per bit (b)/ Average energy per bit (a) $=\frac{37.2135\beta}{22.5950\beta}$\\
+$factor =1.6469$\\
+i.e with the second code [7,4,1] we will need 1.6469 times more energy than [1,1,0]. 
+
 
 
 
