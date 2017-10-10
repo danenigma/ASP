@@ -1,0 +1,194 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+\usetikzlibrary{automata,positioning}
+
+\graphicspath{ {images/} }
+\begin{document}
+\title{\color{red}CARNEGIE MELLON UNIVERSITY\\
+APPLIED STOCHASTIC PROCESSES  (COURSE 18-751)\\
+HOMEWORK 6}
+\author{Daniel Marew}
+\date{\today}
+\clearpage\maketitle
+
+\thispagestyle{empty}
+\newpage
+I collaborated with :\\
+\hspace*{6cm}
+Nebyou Yismaw\\
+\hspace*{6cm}
+Daniel    Nkemelu\\
+\hspace*{6cm}
+Agatha Niwomugizi
+\thispagestyle{empty}
+\newpage
+\clearpage
+\setcounter{page}{1}
+\section*{Q.1}
+
+\[
+ g(x) = 
+  \begin{cases} 
+   0 & \text{if } x \leq 0 \\
+   x       & \text{if } 0< x \leq 1\\
+   1       & \text{if } x > 1
+  \end{cases}
+\]
+Domain if Y is $=[0,1] \implies F_Y(y)=1$ when $y>1$ and $F_Y(y)=0$ when $y<0$\\\\
+$y=g(x)=x$ for $0< x \leq 1$
+$$F_Y(y)=P[Y\leq y]=P[X\leq y]=F_X(y)=\Phi(y)$$
+\[
+ F_Y(y) = 
+  \begin{cases} 
+   0 & \text{if } y \leq 0 \\
+   \Phi(y)       & \text{if } 0< y \leq 1\\
+   1       & \text{if } y > 1
+  \end{cases}
+\]
+Threre are jumps at 0 and 1. At 0 from 0 to $\Phi(0)=\frac{1}{2}$\\ at 1 from $\Phi(1)=0.8413$ to 1\\\\
+\[
+ f_Y(y) = \frac{dF_Y(y)}{dy}=
+  \begin{cases} 
+   \frac{1}{2}\delta(y) &  y = 0 \\
+   \frac{1}{\sqrt{2\pi}}e^{\frac{-y^2}{2}}      &  0< y \leq 1\\
+   0.1587\delta(y-1)       &  y = 1\\
+   0       & \text{otherwise }
+  \end{cases}
+\]
+
+\newpage
+\clearpage
+\section*{Q.2}
+\subsection*{(a)}
+
+$$Z = min\{X_1,X_2,\dots ,X_n\}$$
+\begin{eqnarray*}
+F_Z(z)=P[Z\leq z]=P[min(X_1,X_2,\dots ,X_n)\leq z]\\
+=1-P[min(X1,X2,\dots ,Xn)\geq z]\\
+\end{eqnarray*}•
+If $min(\{X_1,X_2,\dots, X_n\}) > z$ then all the values in $\{X_1,X_2,\dots, X_n\} > z$\\\\
+$\implies$ $F_Z(z) = 1 - P [X1 \geq z, X2\geq z, \dots , X_n \geq z]$
+\begin{eqnarray*}
+F_Z(z) = 1 - \prod_{\substack{i}}^{n}P[X_i\geq z]\\
+= 1 - \prod_{\substack{i}}^{n}(1-P[X_i\leq z])\\
+F_Z(z) = 1 - (1-F_X(z))^n\\
+\end{eqnarray*}•
+\begin{eqnarray*}
+f_Z(z) = \frac{dF_Z(z)}{dz}=\frac{d(1-(1-F_X(z))^n)}{dz}\\
+= -n(1-F_X(z))^{n-1}*\frac{d(1-F_X(z))}{dz}\\
+= -n(1-F_X(z))^{n-1}*(-f_X(z))\\
+=  n(1-F_X(z))^{n-1}*f_X(z)
+\end{eqnarray*}•
+
+\subsection*{(b)}
+$F_X(x) = 1-e^{-x}$, $x>0$, $n=3$, $f_X(x) = e^{-x}$
+\begin{eqnarray*}
+f_Z(z) = 3(1-(1-e^{-z}))^2e^{-z}\\
+= 3(e^{-z})^2e^{-z}\\
+= 3(e^{-2z})e^{-z}\\
+= 3e^{-3z}
+\end{eqnarray*}•
+\[
+ f_Y(z)=
+  \begin{cases} 
+   3e^{-3z}& z>0\\
+   0       & \text{otherwise }
+  \end{cases}
+\]
+\newpage
+\clearpage
+\subsection*{(c)}
+For $\alpha=0.05$ the rejection region is $R = \{z>r\}$\\
+$$\alpha = P[z>r]=1-P[z\leq r]$$
+$$\alpha = P[z>r]=1-F_Z(r)$$
+$$F_Z(r) = 1-(1-F_X(r))^3=1-(1-(1-e^{-r}))^3$$
+$$F_Z(r) =1-e^{-3r}$$
+$$\alpha = 1- F_Z(r)=e^{-3r}$$
+$$r =-\frac{ln\alpha}{3}=-\frac{ln 0.05}{3}=0.9986$$
+$\implies$ we reject the hypothesis if $z>0.9986$
+\subsection*{(d)}
+$F_Y(y) = 1 - e^{-\lambda y}$ and $\lambda <1$\\\\
+$\implies $ For rejection region $R = \{z>r\}$\\
+$$\alpha = 1- P[z\leq r] = 1-F_Z(r)$$
+$$F_Z(r) = 1-(1-F_X(r))^3=1-(1-(1-e^{-\lambda r}))^3$$
+$$F_Z(r) =1-e^{-3\lambda r}$$
+$$\alpha = 1- F_Z(r)=e^{-3\lambda r}$$
+$$e^{-3\lambda r}=\alpha $$
+$$r =-\frac{ln\alpha}{3\lambda}=-\frac{ln 0.05}{3\lambda}=\frac{0.9986}{\lambda}$$
+$\lambda<1$ $\implies$ $r>0.9986$ hence it is more likely that $\lambda = 1$ will reject the hypothesis than $\lambda<1$
+\newpage
+\clearpage
+\section*{Q.3}
+\begin{equation}\label{eq:3}
+f_{XY}(x,y) = \frac{1}{2\pi\sigma^2\sqrt{1-\rho^2}}\exp\bigg[{-\bigg(\frac{x^2-2\rho xy + y^2}{2\sigma^2(1-\rho^2)}       \bigg)}\bigg]
+\end{equation}•
+We can rewrite eqn \ref{eq:3} as a product of two Gaussians\\
+$$f_{XY}(x,y) = \frac{1}{ \sqrt{2\pi}\sigma\sqrt{1-\rho^2}}e^{\frac{-(y-\rho x)^2}{2\sigma^2(1-\rho^2)}}.
+\frac{1}{ \sqrt{2\pi}\sigma}e^{\frac{-x^2}{2\sigma^2}}
+$$
+because it is symmetric we can also rewrite as 
+$$f_{XY}(x,y) = \frac{1}{ \sqrt{2\pi}\sigma\sqrt{1-\rho^2}}e^{\frac{-(x-\rho y)^2}{2\sigma^2(1-\rho^2)}}.
+\frac{1}{ \sqrt{2\pi}\sigma}e^{\frac{-y^2}{2\sigma^2}}
+$$
+The first Gaussian has mean $\mu_1 = 0$ and variance $\sigma_1^2=\sigma^2$. On the other hand the second Gaussian has mean  $\mu2 = \rho y$ and variance $\sigma_2^2=\sigma^2(1-\rho^2)$ 
+$$f_Y(y) = \int_{-\infty}^{\infty}f_{XY}(x,y)dx$$
+$$f_Y(y) = \int_{-\infty}^{\infty}\frac{1}{ \sqrt{2\pi}\sigma}e^{\frac{-y^2}{2\sigma^2}}.\frac{1}{ \sqrt{2\pi}\sigma\sqrt{1-\rho^2}}e^{\frac{-(x-\rho y)^2}{2\sigma^2(1-\rho^2)}}dx$$
+$$f_Y(y) =\frac{1}{ \sqrt{2\pi}\sigma}e^{\frac{-y^2}{2\sigma^2}}.\int_{-\infty}^{\infty}\frac{1}{ \sqrt{2\pi}\sigma\sqrt{1-\rho^2}}e^{\frac{-(x-\rho y)^2}{2\sigma^2(1-\rho^2)}}dx$$
+$$\int_{-\infty}^{\infty}\frac{1}{ \sqrt{2\pi}\sigma\sqrt{1-\rho^2}}e^{\frac{-(x-\rho y)^2}{2\sigma^2(1-\rho^2)}}dx=1$$
+$\implies$
+$$f_Y(y) =\frac{1}{ \sqrt{2\pi}\sigma}e^{\frac{-y^2}{2\sigma^2}}$$
+because it is symmetric\\\\
+$$f_X(x) =\frac{1}{ \sqrt{2\pi}\sigma}e^{\frac{-x^2}{2\sigma^2}}$$
+i.e both $f_Y(y)$  and $f_Y(y)$ are Gaussians with  mean of $\mu = 0$ and variance of $\sigma^2 = \sigma^2$\\
+$f_Y(y) \sim N(0,\sigma^2)$ and $f_X(x) \sim N(0,\sigma^2)$\\
+$$E[Y] = \int_{-\infty}^{\infty}yf_Y(y)dy$$
+since $f_Y(y)$ is a gaussian the expected value $E[Y]=\mu=0$\\\\
+$$f_{Y|X}(x,y) = \frac{f_{XY}(x,y)}{f_{X}(x)}$$
+$$f_{Y|X}(x,y) = \frac{\frac{1}{ \sqrt{2\pi}\sigma\sqrt{1-\rho^2}}e^{\frac{-(y-\rho x)^2}{2\sigma^2(1-\rho^2)}}.
+\frac{1}{ \sqrt{2\pi}\sigma}e^{\frac{-x^2}{2\sigma^2}}}{\frac{1}{ \sqrt{2\pi}\sigma}e^{\frac{-x^2}{2\sigma^2}}}$$
+$$f_{Y|X}(x,y) = \frac{1}{ \sqrt{2\pi}\sigma\sqrt{1-\rho^2}}e^{\frac{-(y-\rho x)^2}{2\sigma^2(1-\rho^2)}}$$
+$\implies f_{Y|X}(x,y) \sim  N(\rho x,\sigma^2(1-\rho^2)$\\
+$\implies E[Y|X=x]=\mu=\rho x$
+\subsection*{(b)} 
+$$f_Y(y) = \frac{1}{\sigma\sqrt{2\pi}}e^-{\frac{y^2}{2\sigma^2}}$$ 
+$\implies f_{Y}(y) \sim N(0,\sigma^2)$\\
+$\implies \sigma_Y=\sigma^2$\\
+$$f_{Y|X}(x,y) = \frac{1}{ \sqrt{2\pi}\sigma\sqrt{1-\rho^2}}e^{\frac{-(y-\rho x)^2}{2\sigma^2(1-\rho^2)}}$$
+$\implies f_{Y|X}(x,y) \sim N(\rho x,\sigma^2(1-\rho^2)$\\
+$\implies \sigma_{Y|X=x}^2=\sigma^2(1-\rho^2)$\\
+\subsection*{(c)}
+Does knowing \textbf{X} provide any information about \textbf{Y}?\\\\
+It depends. When $\rho=0$ $f_{XY}(x,y) = f_X(x)f_Y(y)$ i.e X and Y are independent and knowing X does not provide any information about Y. But when $\rho\neq 0$ $f_{XY}(x,y) \neq f_X(x)f_Y(y)$ i.e X and Y are not independent hence knowing X provides information about Y and vice versa.
+
+
+\end{document}
