@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  10 OCT 2017 05:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  16 OCT 2017 10:07
 entering extended mode
 **./hm7.tex
 (hm7.tex
@@ -566,26 +566,103 @@ ABD: EveryShipout initializing macros
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [1
 
-] [2
+] <images/q2_1.jpg, id=18, 1371.1225pt x 653.44125pt>
+File: images/q2_1.jpg Graphic file (type jpg)
 
-] [3
+<use images/q2_1.jpg>
+Package pdftex.def Info: images/q2_1.jpg used on input line 64.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
 
-] (hm7.aux) ) 
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 63--65
+[]|  [] 
+ []
+
+<images/q2_2.jpg, id=19, 1371.1225pt x 653.44125pt>
+File: images/q2_2.jpg Graphic file (type jpg)
+ <use images/q2_2.jpg>
+Package pdftex.def Info: images/q2_2.jpg used on input line 70.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 69--71
+[]|  [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2
+
+ <./images/q2_1.jpg>] [3 <./images/q2_2.jpg>]
+<images/q3_1.jpg, id=26, 1371.1225pt x 653.44125pt>
+File: images/q3_1.jpg Graphic file (type jpg)
+ <use images/q3_1.jpg>
+Package pdftex.def Info: images/q3_1.jpg used on input line 80.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 79--81
+[]|  [] 
+ []
+
+[4
+
+ <./images/q3_1.jpg>] <images/q3_2.jpg, id=32, 1371.1225pt x 653.44125pt>
+File: images/q3_2.jpg Graphic file (type jpg)
+
+<use images/q3_2.jpg>
+Package pdftex.def Info: images/q3_2.jpg used on input line 89.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 88--90
+[]|  [] 
+ []
+
+[5
+
+ <./images/q3_2.jpg>]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (mcKalman.m
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+ [6]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 51.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 51.
+)
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [7] (hm7.aux) ) 
 Here is how much of TeX's memory you used:
- 14857 strings out of 493323
- 297051 string characters out of 3139060
- 346729 words of memory out of 3000000
- 18144 multiletter control sequences out of 15000+200000
- 8254 words of font info for 30 fonts, out of 3000000 for 9000
+ 15591 strings out of 493323
+ 305803 string characters out of 3139060
+ 562034 words of memory out of 3000000
+ 18853 multiletter control sequences out of 15000+200000
+ 10765 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,66p,408b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on hm7.pdf (5 pages, 51733 bytes).
+ 55i,7n,66p,408b,2109s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+9.pfb>
+Output written on hm7.pdf (9 pages, 388865 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
