@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  20 NOV 2017 08:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  23 OCT 2017 12:13
 entering extended mode
-**./template.tex
-(template.tex
+**./hm8.tex
+(hm8.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -481,8 +481,8 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-) (template.aux)
-\openout1 = `template.aux'.
+) (hm8.aux)
+\openout1 = `hm8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
@@ -564,22 +564,262 @@ ABD: EveryShipout initializing macros
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (template.aux) ) 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] <images/q1_a.jpg, id=
+14, 1371.1225pt x 653.44125pt>
+File: images/q1_a.jpg Graphic file (type jpg)
+
+<use images/q1_a.jpg>
+Package pdftex.def Info: images/q1_a.jpg used on input line 61.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 60--62
+[]|  [] 
+ []
+
+[1
+
+ <./images/q1_a.jpg>] [2]
+<images/q1_c.jpg, id=27, 1371.1225pt x 653.44125pt>
+File: images/q1_c.jpg Graphic file (type jpg)
+ <use images/q1_c.jpg>
+Package pdftex.def Info: images/q1_c.jpg used on input line 98.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 97--99
+[]|  [] 
+ []
+
+[3
+
+ <./images/q1_c.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--110
+
+ []
+
+<images/q1_d.jpg, id=31, 1371.1225pt x 653.44125pt>
+File: images/q1_d.jpg Graphic file (type jpg)
+ <use images/q1_d.jpg>
+Package pdftex.def Info: images/q1_d.jpg used on input line 148.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 147--149
+[]|  [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4
+
+] [5 <./images/q1_d.jpg>]
+<images/q1_e.jpg, id=41, 1371.1225pt x 653.44125pt>
+File: images/q1_e.jpg Graphic file (type jpg)
+ <use images/q1_e.jpg>
+Package pdftex.def Info: images/q1_e.jpg used on input line 156.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 155--157
+[]|  [] 
+ []
+
+[6
+
+ <./images/q1_e.jpg>]
+Overfull \hbox (11.93204pt too wide) detected at line 224
+\OML/cmm/m/it/10.95 a[]K[]a \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95  []  
+[] \OT1/cmr/m/n/10.95 = 1\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 6904 = \OML/cm
+m/m/it/10.95 []
+ []
+
+[7] <images/q1_g_1.jpg, id=48, 1371.1225pt x 653.44125pt>
+File: images/q1_g_1.jpg Graphic file (type jpg)
+
+<use images/q1_g_1.jpg>
+Package pdftex.def Info: images/q1_g_1.jpg used on input line 230.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 229--231
+[]|  [] 
+ []
+
+[8
+
+ <./images/q1_g_1.jpg>] <images/q1_g.jpg, id=52, 1371.1225pt x 653.44125pt>
+File: images/q1_g.jpg Graphic file (type jpg)
+
+<use images/q1_g.jpg>
+Package pdftex.def Info: images/q1_g.jpg used on input line 241.
+(pdftex.def)             Requested size: 685.55957pt x 326.71982pt.
+
+Overfull \hbox (157.27638pt too wide) in paragraph at lines 240--242
+[]|  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--244
+
+ []
+
+[9
+
+ <./images/q1_g.jpg>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--263
+
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--281
+
+ []
+
+[10
+
+] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (hm8.m
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 4--5
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 18--19
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 20--21
+[][][][] 
+ []
+
+[11
+
+]
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 50--51
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 52--53
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 77--78
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 79--80
+[][][][] 
+ []
+
+[12]
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 93--94
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 95--96
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 109--110
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 111--112
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 123--124
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 125--126
+[][][][] 
+ []
+
+[13]
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 137--138
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 139--140
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 151--152
+[][][][] 
+ []
+
+
+Overfull \hbox (15.20117pt too wide) in paragraph at lines 153--154
+[][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 154.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 154.
+ [14])
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [15] (hm8.aux) ) 
 Here is how much of TeX's memory you used:
- 14854 strings out of 493323
- 297062 string characters out of 3139060
- 346730 words of memory out of 3000000
- 18142 multiletter control sequences out of 15000+200000
- 7649 words of font info for 28 fonts, out of 3000000 for 9000
+ 15653 strings out of 493323
+ 306620 string characters out of 3139060
+ 500112 words of memory out of 3000000
+ 18914 multiletter control sequences out of 15000+200000
+ 10765 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,66p,413b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on template.pdf (2 pages, 41318 bytes).
+ 55i,9n,66p,408b,2113s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on hm8.pdf (17 pages, 462700 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

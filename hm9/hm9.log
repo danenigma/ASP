@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  20 NOV 2017 08:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  31 OCT 2017 10:31
 entering extended mode
-**./template.tex
-(template.tex
+**./hm9.tex
+(hm9.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -481,8 +481,8 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-) (template.aux)
-\openout1 = `template.aux'.
+) (hm9.aux)
+\openout1 = `hm9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
@@ -564,22 +564,149 @@ ABD: EveryShipout initializing macros
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (template.aux) ) 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] <q1_a.jpg, id=14, 722
+.7pt x 963.6pt>
+File: q1_a.jpg Graphic file (type jpg)
+ <use q1_a.jpg>
+Package pdftex.def Info: q1_a.jpg used on input line 64.
+(pdftex.def)             Requested size: 325.21199pt x 433.616pt.
+ [1
+
+ <./q1_a.jpg>] <q1_b.jpg, id=19, 722.7pt x 963.6pt>
+File: q1_b.jpg Graphic file (type jpg)
+ <use q1_b.jpg>
+Package pdftex.def Info: q1_b.jpg used on input line 73.
+(pdftex.def)             Requested size: 325.21199pt x 433.616pt.
+ [2
+
+ <./q1_b.jpg>]
+<q1_c.jpg, id=23, 722.7pt x 963.6pt>
+File: q1_c.jpg Graphic file (type jpg)
+ <use q1_c.jpg>
+Package pdftex.def Info: q1_c.jpg used on input line 82.
+(pdftex.def)             Requested size: 325.21199pt x 433.616pt.
+ [3
+
+ <./q1_c.jpg>]
+<q2_a.jpg, id=27, 722.7pt x 963.6pt>
+File: q2_a.jpg Graphic file (type jpg)
+ <use q2_a.jpg>
+Package pdftex.def Info: q2_a.jpg used on input line 92.
+(pdftex.def)             Requested size: 325.21199pt x 433.616pt.
+ [4
+
+ <./q2_a.jpg>]
+<q2_d.jpg, id=31, 1371.1225pt x 653.44125pt>
+File: q2_d.jpg Graphic file (type jpg)
+ <use q2_d.jpg>
+Package pdftex.def Info: q2_d.jpg used on input line 100.
+(pdftex.def)             Requested size: 616.99944pt x 294.04584pt.
+
+Overfull \hbox (117.16899pt too wide) in paragraph at lines 99--101
+[]|  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--114
+
+ []
+
+[5
+
+ <./q2_d.jpg>] <q3_a.jpg, id=38, 1371.1225pt x 653.44125pt>
+File: q3_a.jpg Graphic file (type jpg)
+ <use q3_a.jpg>
+Package pdftex.def Info: q3_a.jpg used on input line 121.
+(pdftex.def)             Requested size: 616.99944pt x 294.04584pt.
+
+Overfull \hbox (117.16899pt too wide) in paragraph at lines 120--122
+[]|  [] 
+ []
+
+[6
+
+ <./q3_a.jpg>] <q3_b.jpg, id=42, 1371.1225pt x 653.44125pt>
+File: q3_b.jpg Graphic file (type jpg)
+ <use q3_b.jpg>
+Package pdftex.def Info: q3_b.jpg used on input line 129.
+(pdftex.def)             Requested size: 616.99944pt x 294.04584pt.
+
+Overfull \hbox (117.16899pt too wide) in paragraph at lines 128--130
+[]|  [] 
+ []
+
+[7
+
+ <./q3_b.jpg>] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (create_graph.m
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
+)
+(hm9.m [8
+
+]) (newKalman.m [9]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 67.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 67.
+ [10])
+(get_measurment.m)
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [11] (hm9.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14854 strings out of 493323
- 297062 string characters out of 3139060
- 346730 words of memory out of 3000000
- 18142 multiletter control sequences out of 15000+200000
- 7649 words of font info for 28 fonts, out of 3000000 for 9000
+ 15645 strings out of 493323
+ 306379 string characters out of 3139060
+ 544558 words of memory out of 3000000
+ 18895 multiletter control sequences out of 15000+200000
+ 11073 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,66p,413b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on template.pdf (2 pages, 41318 bytes).
+ 55i,7n,66p,408b,1788s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on hm9.pdf (13 pages, 1050314 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

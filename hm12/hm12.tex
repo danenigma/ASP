@@ -36,7 +36,7 @@
 \begin{document}
 \title{\color{red}CARNEGIE MELLON UNIVERSITY\\
 APPLIED STOCHASTIC PROCESSES  (COURSE 18-751)\\
-HOMEWORK 11}
+HOMEWORK 12}
 \author{Daniel Marew}
 \date{\today}
 \clearpage\maketitle
@@ -54,6 +54,31 @@ Agatha Niwomugizi
 \newpage
 \clearpage
 \setcounter{page}{1}
+\section*{}
 
-
+\subsection*{(e)}
+\begin{figure}[h]
+  \hspace*{-5cm}
+   \includegraphics[scale=0.45]{q2_e}
+   \caption{Original and Filtered PSD  $\mu_a = 1$,$\sigma_a^2 = 2$}\label{fig:q3}
+\end{figure}
+\clearpage
+\newpage
+\begin{figure}[h]
+  \hspace*{-5cm}
+   \includegraphics[scale=0.45]{q2_e_2}
+   \caption{Original and Filtered PSD ignoring PSD at 0 $\mu_a = 1$,$\sigma_a^2 = 2$}\label{fig:q3}
+\end{figure}
+\quad \\
+The  purpose of the filter is to attenuate the low frequency components of the signal. Hence, it is a \textbf{high pass} filter.
+\begin{figure}[h]
+  \hspace*{-5cm}
+   \includegraphics[scale=0.45]{q2_e_3}
+   \caption{Frequency response of the filter}\label{fig:q3}
+\end{figure}
+\newpage
+\begin{appendix}
+\section*{Code Appendix}
+\lstinputlisting[language=Octave]{hm12.m} 
+\end{appendix}
 \end{document}

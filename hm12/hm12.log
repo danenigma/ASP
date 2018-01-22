@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  20 NOV 2017 08:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.15)  27 NOV 2017 13:07
 entering extended mode
-**./template.tex
-(template.tex
+**./hm12.tex
+(hm12.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -481,8 +481,15 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-) (template.aux)
-\openout1 = `template.aux'.
+) (hm12.aux
+
+LaTeX Warning: Label `fig:q3' multiply defined.
+
+
+LaTeX Warning: Label `fig:q3' multiply defined.
+
+)
+\openout1 = `hm12.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
@@ -496,8 +503,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count130
 \scratchdimen=\dimen171
@@ -564,22 +570,83 @@ ABD: EveryShipout initializing macros
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (template.aux) ) 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] <images/q2_e.jpg, id=
+14, 1371.1225pt x 653.44125pt>
+File: images/q2_e.jpg Graphic file (type jpg)
+
+<use images/q2_e.jpg>
+Package pdftex.def Info: images/q2_e.jpg used on input line 62.
+(pdftex.def)             Requested size: 616.99944pt x 294.04584pt.
+
+Overfull \hbox (117.16899pt too wide) in paragraph at lines 61--63
+[]|  [] 
+ []
+
+[1
+
+ <./images/q2_e.jpg>] <images/q2_e_2.jpg, id=22, 1371.1225pt x 653.44125pt>
+File: images/q2_e_2.jpg Graphic file (type jpg)
+
+<use images/q2_e_2.jpg>
+Package pdftex.def Info: images/q2_e_2.jpg used on input line 69.
+(pdftex.def)             Requested size: 616.99944pt x 294.04584pt.
+
+Overfull \hbox (117.16899pt too wide) in paragraph at lines 68--70
+[]|  [] 
+ []
+
+<images/q2_e_3.jpg, id=23, 1371.1225pt x 653.44125pt>
+File: images/q2_e_3.jpg Graphic file (type jpg)
+ <use images/q2_e_3.jpg>
+Package pdftex.def Info: images/q2_e_3.jpg used on input line 76.
+(pdftex.def)             Requested size: 616.99944pt x 294.04584pt.
+
+Overfull \hbox (117.16899pt too wide) in paragraph at lines 75--77
+[]|  [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2
+
+ <./images/q2_e_2.jpg>]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (hm12.m
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+ [3 <./images/q2_e_3.jpg>]) [4] (hm12.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14854 strings out of 493323
- 297062 string characters out of 3139060
- 346730 words of memory out of 3000000
- 18142 multiletter control sequences out of 15000+200000
- 7649 words of font info for 28 fonts, out of 3000000 for 9000
+ 15551 strings out of 493323
+ 305255 string characters out of 3139060
+ 424080 words of memory out of 3000000
+ 18817 multiletter control sequences out of 15000+200000
+ 11073 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,66p,413b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on template.pdf (2 pages, 41318 bytes).
+ 55i,8n,66p,409b,2117s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on hm12.pdf (6 pages, 227349 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
